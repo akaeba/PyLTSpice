@@ -53,10 +53,10 @@ class kiss_examples:
         ltcSim.setLTspiceVersion(17)
         # set sim defaults
         ltcSim.set_defaults(vmin=0, vmax=5, C_damp=100e-6, R_damp=2.7)
-        #ltcSim.set_settings(
-        #    "; Simulation settings",
-        #    ".TRAN 10m",
-        #)
+        ltcSim.set_settings(
+            "; Simulation settings",
+            ".TRAN 10m",
+        )
         # define values to test
         myCs = [1e-6, 3e-6, 5e-6, 1e-5, 3e-5, 5e-5]
         myRs = [1e-1, 3e-1, 5e-1, 1e+0, 3e+0, 5e+0, 1e+1, 3e+1, 5e+1]
